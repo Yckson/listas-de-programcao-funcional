@@ -4,14 +4,11 @@
 
   function verificaTri(ladoT1, ladoT2, ladoT3){
     //Esta função verifica se os lados fornecidos podem compor um triângulo
-
-    let res = false;
     //Para formar um triângulo válido, a soma de quaisquer dois lados deve ser maior que o terceiro lado
     if (ladoT1 + ladoT2 > ladoT3 && ladoT2 + ladoT3 > ladoT1 && ladoT1 + ladoT3 > ladoT2){
-      res = true;
+      return true;
     }
-
-    return res;
+    return false;
   }
 
 // -------------- Entrada dos Dados ------------- //
@@ -23,7 +20,7 @@
 // ---------------------------------------------- //
 // ------------- Execução da solução ------------ //
 
-  let resposta = verificaTri(lado1, lado2, lado3);
+  const resposta = verificaTri(lado1, lado2, lado3);
   console.log("É um triângulo? " + (resposta ? "Sim" : "Não"));
   //"(resposta ? "Sim" : "Não")" é um operador ternário
 

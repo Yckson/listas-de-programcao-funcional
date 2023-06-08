@@ -5,7 +5,7 @@
 function calcAreaCir(raio){
   //Esta função calcula a área de uma circunferência com base no seu raio
   //"Math.PI" representa um valor bem apriximado de pi para o JS. É possível substituir por "3.14".
-  let res = Math.PI * (raio ** 2);
+  const res = Math.PI * (raio ** 2);
   return res;
 }
 
@@ -15,7 +15,7 @@ const r = 2;
 // ---------------------------------------------- //
 // ------------- Execução da solução ------------ //
 
-let resposta = calcAreaCir(r);
+const resposta = calcAreaCir(r);
 console.log("Área da Circunferência: " + resposta);
 // ---------------------------------------------- //
 
