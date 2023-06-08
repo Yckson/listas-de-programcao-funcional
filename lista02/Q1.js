@@ -1,3 +1,6 @@
+//Q1. Programa para calcular a área de um retângulo dados os comprimentos de duas arestas
+
+
 // ----------------- Corpos das Funções --------------- //
 
 function calcAreaRet(baseRet, hipRet){ 
