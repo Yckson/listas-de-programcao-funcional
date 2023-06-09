@@ -3,10 +3,12 @@
 //-------------- Corpos das Funções ------------- //
 
   function pot4(num){
+    //Esta função calcula a quarta potência de um número qualquer
     return pot2(num) * pot2(num);
   }
 
   function pot2(num){
+    //Esta função calcula a segunda potência de um número qualquer
     return num * num;
   }
 
