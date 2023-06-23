@@ -2,14 +2,9 @@
 
 //-------------- Corpos das Funções ------------- //
 
-  function pot4(num){
-    //Esta função calcula a quarta potência de um número qualquer
-    return pot2(num) * pot2(num);
-  }
-
-  function pot2(num){
-    //Esta função calcula a segunda potência de um número qualquer
-    return num * num;
+  function calc4potencia(num){
+    const calc2potencia = (num) => num ** 2;
+    return calc2potencia(num) ** 2;
   }
 
 //----------------------------------------------- //
@@ -20,7 +15,7 @@
 // ---------------------------------------------- //
 // ------------- Execução da solução ------------ //
   
-  const resposta = pot4(numero);
+  const resposta = calc4potencia(numero);
   console.log(`O número ${numero} elevado a quarta potência é igual à: ${resposta}.`);
 
 // ---------------------------------------------- //
