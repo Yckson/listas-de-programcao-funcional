@@ -4,17 +4,28 @@
 
   function distPontos(p1, p2){
     //Esta função calcula a distância euclidiana entre dois pontos no plano X, Y.
-    if (p1[0] == p2[0]) return Math.abs(p2[1] - p1[1]);
-    else if (p1[1] == p2[1]) return Math.abs(p2[0] - p1[0]);
+    if (p1[0] == p2[0]){
+      if(p2[1] >= p1[1]){
+        return p2[1] - p1[1];
+      }
+      return p1[1] - p2[1];
+    }
+    else if (p1[1] == p2[1]){
+      if(p2[0] >= p1[0]){
+        console.log('!')
+        return p2[0] - p1[0];
+      }
+      return p1[0] - p2[0];
+    }
     else {
-      return (Math.sqrt((Math.abs(p2[0] - p1[0]) ** 2) + Math.abs(p2[1] - p1[1]) ** 2));
+      return ((((p2[0] - p1[0]) ** 2) + (p2[1] - p1[1]) ** 2)**(1/2));
     }
   }
   
 // -------------- Entrada dos Dados ------------- //
   
-  const ponto1 = [5, 5];
-  const ponto2 = [8, 9];
+  const ponto1 = [0, 0];
+  const ponto2 = [3, 4];
 
 // ---------------------------------------------- //
 // ------------- Execução da solução ------------ //

@@ -2,9 +2,9 @@
 
 //-------------- Corpos das Funções ------------- //
 
-  function verificaTipoTri(l1, l2, l3){
+  function verificaTipoTri(l1, l2, l3, eTriangulo=true){
     //Esta função verifica qual o tipo de triângulo estabelecido pelo tamanho dos lados fornecidos
-    if (!verificaTri(l1, l2, l3)){
+    if (!eTriangulo){
       return "não existe!"
     }
     if (l1 == l2 && l2 == l3){
@@ -29,14 +29,14 @@
 
 // -------------- Entrada dos Dados ------------- //
 
-  const lado1 = 4;
-  const lado2 = 4;
-  const lado3 = 4;
+  const lado1 = 1;
+  const lado2 = 1;
+  const lado3 = 1;
 
 // ---------------------------------------------- //
 // ------------- Execução da solução ------------ //
 
-  const resposta = verificaTipoTri(lado1, lado2, lado3);
+  const resposta = verificaTipoTri(lado1, lado2, lado3, verificaTri(lado1, lado2, lado3));
   console.log("O triângulo " + resposta);
 
 // ---------------------------------------------- //
