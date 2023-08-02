@@ -212,5 +212,5 @@
     },
     "window.commandCenter": true,
     "git.openRepositoryInParentFolders": "always",
-    "window.zoomLevel": 0
+    "window.zoomLevel": -1
   }
